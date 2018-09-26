@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/bootstrap.css">
+</head>
+<body>
+    <div class="header container">
+        <div class="page-header">
+            <h1> <a href="/">首页</a><small>发表评论</small></h1>
+        </div>
+    </div>
+    <div class="comments container">
+        <!--
+            表单提交
+                表单需要提交的表单控件元素必须具有name属性
+                表单提交分为：
+                    1.默认的提交行为
+                    2.表单异步提交
+                action就是表单提交的地址，就是url请求的地址
+                method请求方法
+                    get
+                    post
+
+        -->
+        <form action="" method="post">
+            <div class="form-group">
+                <label for="input_name">你的大名</label>
+                <input type="text" class="form-control" id="input_name" name="name" required minlength="2" maxlength="10"
+                placeholder="输入你的名字">
+            </div>
+            <div class="form-group">
+                <label for="textarea_message">留言内容</label>
+                <textarea id="textarea_message" class="form-control" name="message" cols="30" rows="10" required
+                 minlength="5" maxlength="20"></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">发表</button>
+        </form>
+    </div>
+</body>
+</html>
